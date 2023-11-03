@@ -1,0 +1,67 @@
+body {
+    background: #2d1a52
+}
+footer {
+    background: #362953
+
+} 
+.conteiner {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+/* Les liens et éléments important: #EE3E52
+Les couleurs du gradient sur les boutons: #FF6071 / #FF7E8E
+} */
+.social {
+    display: flex;
+
+}
+.social > .button{
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    margin: 10px;
+    background-color: #EE3E52;
+}
+
+h1 {
+    size: 40px;
+    color: #EE3E52;
+}
+
+.slider-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.slider {
+    width: 300%; 
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.slide {
+    flex: 0 0 33.33%;
+}
+
+.slider img {
+    width: 80vw;
+    height: 40vh;
+    object-fit: cover;
+    object-position: top;
+}
+
+.text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 24px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
