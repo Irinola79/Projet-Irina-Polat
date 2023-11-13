@@ -1,3 +1,4 @@
+@import url(./commonsource.css);
 body {
     background: #2d1a52
 }
@@ -18,7 +19,9 @@ Les couleurs du gradient sur les boutons: #FF6071 / #FF7E8E
     display: flex;
 
 }
-.social > .button{
+
+.button{
+    color: white;
     width: 40px;
     height: 40px;
     text-align: center;
@@ -26,42 +29,105 @@ Les couleurs du gradient sur les boutons: #FF6071 / #FF7E8E
     border-radius: 50%;
     margin: 10px;
     background-color: #EE3E52;
+    border-style: none;
 }
 
 h1 {
-    size: 40px;
-    color: #EE3E52;
+    font-size: 60px;
+    color: white;
+    font-family: var(--font-logo);
 }
 
+.navigation{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.navigation a {
+    color: white;
+    font-family: var(--font-text);
+    text-align: center;
+    font-size: 15px;
+    text-decoration: none;
+}
+hr.line {
+    border-top: 0.2px solid rgb(41, 56, 69);
+    width: 70%;
+    margin: 50px auto ;
+    
+  }
+
 .slider-container {
-    width: 100%;
+    max-width: 100%;
     overflow: hidden;
     position: relative;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .slider {
-    width: 300%; 
+    /* width: 300%;  */
     display: flex;
-    transition: transform 0.5s ease;
+    justify-content: center;
+    transition: transform 0.5s ease; 
+    position: relative;
+    text-align: center;
+    color: white;
+    
 }
 
-.slide {
+/* .slide {
     flex: 0 0 33.33%;
-}
+} */
 
 .slider img {
     width: 80vw;
     height: 40vh;
     object-fit: cover;
-    object-position: top;
+    top: 25%;
+    
+    
 }
 
-.text-overlay {
+
+
+.johnfoto {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-image: url(./photos/pexels-photo-941693.jpeg);
+    background-repeat: no-repeat;
+    
+
+}
+
+.personal {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: white;
-    font-size: 24px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
+
+.autor {
+    display: flex;
+    flex-direction: row;
+    
+}
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
